@@ -26,12 +26,12 @@ jobs:
   deploy:
     docker:
       - image: circleci/node:7
-      steps:
-        - checkout
-        - run:
-            name: Deploy main to Digital Ocean
-             command: |
-              ssh -oStrictHostKeyChecking=no - v root@104.238.130.168 "cd ~/todo-app; git pull; npm install; node app.js" 
+    steps:
+      - checkout
+      - run:
+          name: Deploy main to Digital Ocean
+            command: |
+            ssh -oStrictHostKeyChecking=no - v root@104.238.130.168 "cd ~/todo-app; git pull; npm install; node app.js" 
 
 
 

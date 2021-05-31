@@ -39,6 +39,6 @@ workflows:
   version: 2
   example:
     jobs:
-      - build:
-      - deploy:
+      - build
+      - deploy
 

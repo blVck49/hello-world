@@ -17,11 +17,11 @@ jobs:
   build:
     docker:
       - image:  circleci/node:7
-      steps:
-        - checkout
-        - run:
-            name: install-dependencies
-            command: npm install
+    steps:
+      - checkout
+      - run:
+          name: install-dependencies
+          command: npm install
 #workflows:
  # version: 2
 #  test:

@@ -40,12 +40,5 @@ workflows:
   example:
     jobs:
       - build:
-          filters:
-            branches:
-              only: master
       - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+

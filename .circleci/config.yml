@@ -22,8 +22,12 @@ jobs:
       - run:
           name: install-dependencies
           command: npm install
-#workflows:
- # version: 2
-#  test:
-#    jobs:
-#      - build
+          
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: main

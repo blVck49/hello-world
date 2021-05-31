@@ -23,7 +23,7 @@ jobs:
           name: install-dependencies
           command: npm install
           
-workflows:
+workflow:
   version: 2
   test:
     jobs:

@@ -26,9 +26,8 @@ jobs:
             steps:
               - run: npm install
         - run: node app.js
-workflows:
-  version: 2
-  test:
-    jobs:
-      - build
-  
+#workflows:
+ # version: 2
+#  test:
+#    jobs:
+#      - build
